@@ -85,6 +85,28 @@ class SettingsListTests(unittest.TestCase):
         self.assertEqual([s.label for s in scrolled], [s.label for s in self.settings])
 
 
+class AppSettingsScreenTests(unittest.TestCase):
+    """Swarm II's app Settings open as a panel over the device page, which
+    stays in the tree; the list must show only what is on screen."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.settings = model.build_settings(load("app_settings.json"))
+
+    def test_only_the_settings_panel_is_listed(self):
+        self.assertEqual([s.label for s in self.settings], [
+            "Download updates automatically", "Search for updates automatically",
+            "Select language", "Autostart Swarm II", "Show update notification"])
+
+    def test_sections_come_from_the_group_headings(self):
+        self.assertEqual([s.section for s in self.settings], [
+            "Updates", "Updates", "Language", "App settings", "Notifications and tooltips"])
+
+    def test_language_combo_box(self):
+        language = self.settings[2]
+        self.assertEqual((language.kind, language.element.value), (model.COMBO, "English"))
+
+
 class HomeScreenTests(unittest.TestCase):
     """Swarm II can open on its home screen, which has nothing Tab can reach."""
 
@@ -124,6 +146,7 @@ class LabelTests(unittest.TestCase):
         self.assertEqual(model.tidy_label("LED BRIGHTNESS"), "LED brightness")
         self.assertEqual(model.tidy_label("VOICE & TONE PROMPTS"), "Voice and tone prompts")
         self.assertEqual(model.tidy_label("AUTO SHUT-OFF"), "Auto shut-off")
+        self.assertEqual(model.tidy_label("AUTOSTART SWARM II"), "Autostart Swarm II")
         self.assertEqual(model.tidy_label("Already mixed"), "Already mixed")
 
     def test_value_like(self):

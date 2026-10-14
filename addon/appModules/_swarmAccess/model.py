@@ -61,6 +61,8 @@ GENERIC_LABELS = {"levels", "level"}
 
 # Words kept in capitals when Swarm II's ALL CAPS labels are tidied.
 ACRONYMS = {"LED", "EQ", "PC", "USB", "3D", "II"}
+# Names that keep their capital letter: "AUTOSTART SWARM II" -> "Autostart Swarm II".
+PROPER_NOUNS = {"SWARM": "Swarm", "WAVES": "Waves", "TURTLE": "Turtle", "BEACH": "Beach"}
 
 _VALUE_LIKE = re.compile(r"^[-+]?\d+(\.\d+)?\s*(%|dB|Hz|kHz)?$", re.IGNORECASE)
 
@@ -212,6 +214,8 @@ def tidy_label(text: str) -> str:
     for i, word in enumerate(words):
         if word in ACRONYMS or any(ch.isdigit() for ch in word):
             tidied.append(word)
+        elif word in PROPER_NOUNS:
+            tidied.append(PROPER_NOUNS[word])
         elif i == 0:
             tidied.append(word.capitalize())
         else:
@@ -223,6 +227,9 @@ def is_value_like(text: str) -> bool:
     """True for labels that show a number or an end marker rather than a name."""
     text = text.strip()
     return len(text) <= 1 or bool(_VALUE_LIKE.match(text))
+
+
+OVERLAY_NAME = "wg_overlay"
 
 
 def section_frame(automation_id: str) -> str:
@@ -243,6 +250,56 @@ class Snapshot:
             e for e in self.elements
             if e.class_name in LABEL_CLASSES and e.name.strip() and e.rect is not None
         ]
+        self._covered = self._covered_panels()
+        # Group headings ("UPDATES", "APP SETTINGS"): a label inside a widget
+        # whose object name ends in "_title", keyed by that widget's parent.
+        self._headings: dict[str, Element] = {}
+        for label in self.labels:
+            if "." in label.parent_path:
+                group, holder = label.parent_path.rsplit(".", 1)
+                if holder.endswith("_title"):
+                    self._headings.setdefault(group, label)
+
+    def _covered_panels(self) -> list[str]:
+        """AutomationIds of panels hidden under a later panel.
+
+        Swarm II opens its app Settings as a panel laid over the device page,
+        which stays in the tree with its old positions.  Qt paints a widget's
+        later children on top of earlier ones, so a child of the overlay
+        container that is wholly inside a later child's rectangle is hidden.
+        """
+        overlay = next((e for e in self.elements if e.object_name == OVERLAY_NAME), None)
+        if overlay is None:
+            return []
+        panels = [e for e in self.elements
+                  if e.parent_path == overlay.automation_id and e.rect is not None and e.automation_id]
+        return [
+            panel.automation_id for i, panel in enumerate(panels)
+            if any(later.rect.contains(panel.rect) for later in panels[i + 1:])
+        ]
+
+    def is_covered(self, element: Element) -> bool:
+        return any(element.automation_id.startswith(panel + ".") for panel in self._covered)
+
+    def heading_label(self, element: Element) -> Optional[Element]:
+        """The label naming the section a control is in, if there is one."""
+        frame = section_frame(element.automation_id)
+        if frame:
+            for label in self.labels:
+                if label.object_name == "lb_func_name" and label.automation_id.startswith(frame + "."):
+                    return label
+            return None
+        parts = element.automation_id.split(".")
+        for i in range(len(parts) - 1, 0, -1):
+            label = self._headings.get(".".join(parts[:i]))
+            if label is not None:
+                return label
+        return None
+
+    def heading_for(self, element: Element) -> str:
+        """The nearest group heading above a control in the tree, tidied."""
+        label = self.heading_label(element)
+        return tidy_label(label.name) if label is not None else ""
 
     @classmethod
     def from_dicts(cls, rows: Sequence[dict]) -> "Snapshot":
@@ -357,8 +414,10 @@ def build_settings(snap: Snapshot) -> list[Setting]:
     for element in snap.elements:
         if element.rect is None:
             continue
+        if snap.is_covered(element):
+            continue
         frame = section_frame(element.automation_id)
-        section = snap.section_title(frame)
+        section = snap.section_title(frame) or snap.heading_for(element)
         cls = element.class_name
 
         if cls == SWITCH_CLASS or cls == COMBO_CLASS:
@@ -412,7 +471,21 @@ def build_settings(snap: Snapshot) -> list[Setting]:
             ))
 
     _disambiguate(settings)
-    return settings
+    return _in_screen_order(snap, settings)
+
+
+def _in_screen_order(snap: Snapshot, settings: list[Setting]) -> list[Setting]:
+    """Order the list the way the page reads: sections by where their heading
+    sits (top, then left, so side-by-side columns keep left before right),
+    and settings within a section from top to bottom."""
+    anchors: dict[str, tuple] = {}
+    for s in settings:
+        label = snap.heading_label(s.element)
+        rect = label.rect if label is not None else s.rect
+        spot = (rect.top, rect.left)
+        if s.section not in anchors or spot < anchors[s.section]:
+            anchors[s.section] = spot
+    return sorted(settings, key=lambda s: (anchors[s.section], s.rect.top, s.rect.left))
 
 
 def _fallback_label(element: Element) -> str:

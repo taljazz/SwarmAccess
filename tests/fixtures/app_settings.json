@@ -1,0 +1,4217 @@
+[
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   -36,
+   1800,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   -36,
+   300,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.wg_logo",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   84,
+   4,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   9,
+   3,
+   25
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.lb_swarm_ii",
+  "cls": "QLabel",
+  "name": "SWARM II",
+  "value": "",
+  "rect": [
+   150,
+   4,
+   241,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_global_profile_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   360,
+   -36,
+   813,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1173,
+   -36,
+   375,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c",
+  "cls": "process_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1173,
+   -36,
+   375,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c.lb_status",
+  "cls": "QLabel",
+  "name": "Up to date",
+  "value": "",
+  "rect": [
+   1395,
+   -36,
+   108,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c.lb_icon",
+  "cls": "QLabel",
+  "name": "",
+  "value": "",
+  "rect": [
+   1509,
+   -1,
+   39,
+   39
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_notification_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1548,
+   -36,
+   84,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_notification_area.wg_notification_btn",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1566,
+   -6,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "",
+  "value": "",
+  "rect": [
+   1566,
+   -6,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1632,
+   -36,
+   228,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_minimized",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1650,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_close",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1779,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_maximized",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1714,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_controls",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   732,
+   72,
+   312
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   732,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   810,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   888,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   966,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_back",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   141
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_back.btn_back",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   72
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_device_controls",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   213,
+   72,
+   216
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_device_controls.buttons_tab",
+  "cls": "roccat_tab_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   213,
+   72,
+   216
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.line",
+  "cls": "QFrame",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   429,
+   72,
+   303
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   132,
+   72,
+   1728,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget",
+  "cls": "QTabWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget",
+  "cls": "QStackedWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c",
+  "cls": "main_page_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea",
+  "cls": "QScrollArea",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   195,
+   1725,
+   885
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   195,
+   1662,
+   885
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   -1648,
+   1662,
+   2728
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   -1648,
+   1662,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   -1648,
+   813,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   -1648,
+   813,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c",
+  "cls": "audio_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   -1648,
+   786,
+   819
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   -1648,
+   786,
+   819
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1648,
+   720,
+   120
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "AUDIO",
+  "value": "",
+  "rect": [
+   198,
+   -1606,
+   630,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.widget.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   837,
+   -1606,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   882,
+   -1606,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1528,
+   720,
+   636
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1528,
+   720,
+   109
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_title_volume",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1528,
+   720,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_title_volume.label_title_volume",
+  "cls": "QLabel",
+  "name": "AUDIO MASTER VOLUME",
+  "value": "",
+  "rect": [
+   198,
+   -1521,
+   654,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_title_volume.switchbox_volume",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   861,
+   -1521,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_slider_volume",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1471,
+   720,
+   52
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_slider_volume.label_mini_volume",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   198,
+   -1471,
+   48,
+   52
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_slider_volume.slider_content_volume",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   258,
+   -1464,
+   600,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_volume.wg_slider_volume.label_max_volume",
+  "cls": "QLabel",
+  "name": "100",
+  "value": "",
+  "rect": [
+   870,
+   -1471,
+   48,
+   52
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1419,
+   720,
+   127
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_title_shh",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1419,
+   720,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_title_shh.label_title_shh",
+  "cls": "QLabel",
+  "name": "SUPERHUMAN HEARING",
+  "value": "",
+  "rect": [
+   198,
+   -1419,
+   405,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_title_shh.cb_shh",
+  "cls": "roccat_combobox_c",
+  "name": "",
+  "value": "Legacy",
+  "rect": [
+   639,
+   -1419,
+   186,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_title_shh.switchbox_shh",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   861,
+   -1405,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_slider_shh",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1348,
+   720,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_slider_shh.label_mini_shh",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   198,
+   -1348,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_slider_shh.slider_content_shh",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   246,
+   -1344,
+   624,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_shh.wg_slider_shh.label_max_shh",
+  "cls": "QLabel",
+  "name": "100",
+  "value": "",
+  "rect": [
+   870,
+   -1348,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1291,
+   720,
+   121
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_title_chatmix",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1284,
+   720,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_title_chatmix.label_title_chatmix",
+  "cls": "QLabel",
+  "name": "GAME CHAT MIX",
+  "value": "",
+  "rect": [
+   198,
+   -1284,
+   720,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_slider_chatmix",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1227,
+   720,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_slider_chatmix.label_mini_chatmix",
+  "cls": "QLabel",
+  "name": "G",
+  "value": "",
+  "rect": [
+   198,
+   -1227,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_slider_chatmix.slider_content_chatmix",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   246,
+   -1222,
+   624,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_chatmix.wg_slider_chatmix.label_max_chatmix",
+  "cls": "QLabel",
+  "name": "C",
+  "value": "",
+  "rect": [
+   870,
+   -1227,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_boost",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1170,
+   720,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_boost.wg_title_boost",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1146,
+   720,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_boost.wg_title_boost.label_title_boost",
+  "cls": "QLabel",
+  "name": "CHAT BOOST",
+  "value": "",
+  "rect": [
+   198,
+   -1146,
+   405,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_boost.wg_title_boost.cb_chat_boost",
+  "cls": "roccat_combobox_c",
+  "name": "",
+  "value": "BOLD",
+  "rect": [
+   639,
+   -1146,
+   186,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_boost.wg_title_boost.switchbox_boost",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   861,
+   -1132,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_waves3d",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1062,
+   720,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_waves3d.label_title_waves3d",
+  "cls": "QLabel",
+  "name": "WAVES 3D",
+  "value": "",
+  "rect": [
+   198,
+   -1062,
+   405,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_waves3d.cb_waves3d",
+  "cls": "roccat_combobox_c",
+  "name": "",
+  "value": "Games",
+  "rect": [
+   639,
+   -1062,
+   186,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_waves3d.switchbox_waves3d",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   861,
+   -1048,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -1002,
+   720,
+   109
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   198,
+   -972,
+   720,
+   49
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.label_title_high_bandwidth",
+  "cls": "QLabel",
+  "name": "HIGH BANDWIDTH AUDIO",
+  "value": "",
+  "rect": [
+   198,
+   -972,
+   412,
+   49
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.label_content_high_band",
+  "cls": "QLabel",
+  "name": "24 bit, 48000 Hz",
+  "value": "",
+  "rect": [
+   646,
+   -972,
+   186,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_audio_main.wg_audio_func.audio_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.btn_high_band",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   868,
+   -972,
+   49,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   984,
+   -1648,
+   813,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   984,
+   -1648,
+   813,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c",
+  "cls": "mic_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   984,
+   -1648,
+   813,
+   819
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   984,
+   -1648,
+   813,
+   819
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1648,
+   747,
+   120
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "MICROPHONE",
+  "value": "",
+  "rect": [
+   1020,
+   -1606,
+   657,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.widget.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1686,
+   -1606,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1731,
+   -1606,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1519,
+   747,
+   627
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_mute",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1519,
+   747,
+   90
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_mute.wg_title_mute",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1519,
+   747,
+   90
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_mute.wg_title_mute.switchbox_mute",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1710,
+   -1491,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_mute.wg_title_mute.label_title_mute",
+  "cls": "QLabel",
+  "name": "MUTE MICROPHONE",
+  "value": "",
+  "rect": [
+   1020,
+   -1491,
+   690,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1429,
+   747,
+   135
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_title_sensitivity",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1429,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_title_sensitivity.label_title_sensitivity",
+  "cls": "QLabel",
+  "name": "SENSITIVITY",
+  "value": "",
+  "rect": [
+   1020,
+   -1429,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_slider_sensitivity",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1372,
+   747,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_slider_sensitivity.label_mini_sensitivity",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   1020,
+   -1372,
+   48,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_slider_sensitivity.slider_content_sensitivity",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1068,
+   -1353,
+   651,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_sensitivity.wg_slider_sensitivity.label_max_sensitivity",
+  "cls": "QLabel",
+  "name": "100",
+  "value": "",
+  "rect": [
+   1719,
+   -1372,
+   48,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1294,
+   747,
+   133
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_title_monitor",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1294,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_title_monitor.label_title_monitor",
+  "cls": "QLabel",
+  "name": "MONITORING",
+  "value": "",
+  "rect": [
+   1020,
+   -1294,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_slider_monitor",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1237,
+   747,
+   76
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_slider_monitor.label_mini_monitor",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   1020,
+   -1237,
+   48,
+   76
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_slider_monitor.slider_content_monitor",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1068,
+   -1218,
+   651,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_monitor.wg_slider_monitor.label_max_monitor",
+  "cls": "QLabel",
+  "name": "100",
+  "value": "",
+  "rect": [
+   1719,
+   -1237,
+   48,
+   76
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1161,
+   747,
+   135
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_title_noise",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1161,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_title_noise.label_title_noise",
+  "cls": "QLabel",
+  "name": "NOISE GATE",
+  "value": "",
+  "rect": [
+   1020,
+   -1161,
+   681,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_title_noise.switchbox_noise",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1710,
+   -1153,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_slider_noise",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1104,
+   747,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_slider_noise.label_mini_noise",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   1020,
+   -1104,
+   48,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_slider_noise.slider_content_noise",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1068,
+   -1084,
+   651,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_noise.wg_slider_noise.label_max_noise",
+  "cls": "QLabel",
+  "name": "100",
+  "value": "",
+  "rect": [
+   1719,
+   -1104,
+   48,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -1026,
+   747,
+   133
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1020,
+   -984,
+   747,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.label_title_high_bandwidth",
+  "cls": "QLabel",
+  "name": "HIGH-BANDWIDTH MICROPHONE",
+  "value": "",
+  "rect": [
+   1020,
+   -984,
+   439,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.label_content_high_band",
+  "cls": "QLabel",
+  "name": "16 bit, 48000 Hz",
+  "value": "",
+  "rect": [
+   1495,
+   -984,
+   186,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_device.wg_mic_main.wg_mic_func.mic_func_fm_c.wg_main.wg_content.wg_area_high_bandwidth.wg_title_high_bandwidth.btn_high_band",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1717,
+   -984,
+   49,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   -736,
+   1662,
+   912
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c",
+  "cls": "eq_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1632,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1632,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1080,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting",
+  "cls": "QTabWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1080,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget",
+  "cls": "QStackedWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1080,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1080,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -736,
+   1080,
+   106
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top.key_mode_tab",
+  "cls": "roccat_text_tab_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   517,
+   -711,
+   375,
+   54
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1125,
+   -702,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1179,
+   -702,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top.switch_show_grid",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   915,
+   -697,
+   48,
+   27
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_top.label_show_grid_text",
+  "cls": "QLabel",
+  "name": "SHOW GRID",
+  "value": "",
+  "rect": [
+   987,
+   -696,
+   120,
+   24
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   -630,
+   1080,
+   655
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c",
+  "cls": "eq_setting_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   216,
+   -616,
+   978,
+   628
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   216,
+   -616,
+   978,
+   628
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   304,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   394,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   484,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   574,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   664,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   754,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   844,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   934,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1024,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_eq_setting.eq_setting_fm_c.wg_container.eq_slider",
+  "cls": "eq_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1114,
+   -609,
+   37,
+   537
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_main_bottom",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   165,
+   25,
+   1080,
+   112
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_main_bottom.btn_save",
+  "cls": "roccat_button_c",
+  "name": "Save",
+  "value": "",
+  "rect": [
+   1068,
+   52,
+   141,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_main_bottom.btn_cancel",
+  "cls": "roccat_button_c",
+  "name": "Cancel",
+  "value": "",
+  "rect": [
+   201,
+   52,
+   172,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_stackedwidget.tab_main_page.wg_main_bottom.btn_save_as_new",
+  "cls": "roccat_button_c",
+  "name": "Save as new preset",
+  "value": "",
+  "rect": [
+   762,
+   52,
+   282,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_tabbar",
+  "cls": "QTabBar",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_tabbar.ScrollLeftButton",
+  "cls": "QToolButton",
+  "name": "Scroll Left",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_setting_container.tabWidget_setting.qt_tabwidget_tabbar.ScrollRightButton",
+  "cls": "QToolButton",
+  "name": "Scroll Right",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -736,
+   528,
+   876
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_top",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -736,
+   528,
+   90
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_top.segmented_mode",
+  "cls": "roccat_segmented_controler_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -736,
+   528,
+   90
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -646,
+   528,
+   696
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function",
+  "cls": "QTabWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -646,
+   528,
+   696
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget",
+  "cls": "QStackedWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -646,
+   528,
+   696
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -646,
+   528,
+   696
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c",
+  "cls": "functions_panel_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget",
+  "cls": "QTabWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget",
+  "cls": "QStackedWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget.tab_functions",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget.tab_functions.scrollArea",
+  "cls": "QScrollArea",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget.tab_functions.scrollArea.qt_scrollarea_viewport",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   663
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget.tab_functions.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   240
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_stackedwidget.tab_functions.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_menus",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   -622,
+   528,
+   240
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_tabbar",
+  "cls": "QTabBar",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_tabbar.ScrollLeftButton",
+  "cls": "QToolButton",
+  "name": "Scroll Left",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.functions_panel_c.wg_functions_panel_container.tabWidget.qt_tabwidget_tabbar.ScrollRightButton",
+  "cls": "QToolButton",
+  "name": "Scroll Right",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.warning_massage_panel_c",
+  "cls": "warning_massage_panel_c",
+  "name": "",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.warning_massage_panel_c.wg_warning",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   76,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.warning_massage_panel_c.label_title",
+  "cls": "QLabel",
+  "name": "REACHED MAXIMUM AMOUNT OF PRESET",
+  "value": "",
+  "rect": [
+   1353,
+   82,
+   396,
+   30
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_stackedwidget.tab_function_panel.warning_massage_panel_c.label_context",
+  "cls": "QLabel",
+  "name": "Only 5 custom presets can be saved onboard! Please delete first to continue.",
+  "value": "",
+  "rect": [
+   1305,
+   124,
+   618,
+   61
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_tabbar",
+  "cls": "QTabBar",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "\u9801\u9762",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_tabbar.ScrollLeftButton",
+  "cls": "QToolButton",
+  "name": "Scroll Left",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_left_middle.tabWidget_function.qt_tabwidget_tabbar.ScrollRightButton",
+  "cls": "QToolButton",
+  "name": "Scroll Right",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_bottom",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   49,
+   528,
+   90
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_eq.eq_fm_c.wg_container.wg_left_area.wg_bottom.btn_create",
+  "cls": "roccat_button_c",
+  "name": "Create custom presets",
+  "value": "",
+  "rect": [
+   1305,
+   49,
+   316,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   175,
+   1662,
+   904
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c",
+  "cls": "wireless_headset_device_status_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   175,
+   526,
+   904
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   175,
+   526,
+   904
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   175,
+   526,
+   120
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   622,
+   217,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "DEVICE STATUS",
+  "value": "",
+  "rect": [
+   198,
+   175,
+   394,
+   120
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   306,
+   526,
+   237
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   306,
+   526,
+   81
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery.bar_battery",
+  "cls": "QProgressBar",
+  "name": "",
+  "value": "85",
+  "rect": [
+   162,
+   306,
+   526,
+   3
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery.wg_battery_lb_mask",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   309,
+   526,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery.wg_battery_lb_mask.lb_battery_status",
+  "cls": "QLabel",
+  "name": "BATTERY STATUS",
+  "value": "",
+  "rect": [
+   198,
+   309,
+   370,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery.wg_battery_lb_mask.lb_battery_level",
+  "cls": "QLabel",
+  "name": "85%",
+  "value": "",
+  "rect": [
+   568,
+   309,
+   90,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_battery.wg_mask",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   306,
+   613,
+   3
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.lb_drivers",
+  "cls": "QLabel",
+  "name": "DRIVERS",
+  "value": "",
+  "rect": [
+   162,
+   411,
+   222,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.lb_driver_status",
+  "cls": "QLabel",
+  "name": "Up to date",
+  "value": "",
+  "rect": [
+   384,
+   411,
+   220,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_driver_status",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   604,
+   414,
+   48,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.widget_3",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   652,
+   414,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.lb_connection",
+  "cls": "QLabel",
+  "name": "CONNECTION",
+  "value": "",
+  "rect": [
+   162,
+   477,
+   222,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.lb_connection_type",
+  "cls": "QLabel",
+  "name": "Transmitter",
+  "value": "",
+  "rect": [
+   384,
+   477,
+   220,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.wg_connection_type",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   604,
+   480,
+   48,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_status.widget_4",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   652,
+   480,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   553,
+   526,
+   222
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter.lb_platform_mode",
+  "cls": "QLabel",
+  "name": "PLATFORM",
+  "value": "",
+  "rect": [
+   198,
+   718,
+   225,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter.lb_transmitter",
+  "cls": "QLabel",
+  "name": "TRANSMITTER",
+  "value": "",
+  "rect": [
+   198,
+   553,
+   460,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter.lb_platform_mode_status",
+  "cls": "QLabel",
+  "name": "PC",
+  "value": "",
+  "rect": [
+   433,
+   718,
+   225,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter.lb_status",
+  "cls": "QLabel",
+  "name": "STATUS",
+  "value": "",
+  "rect": [
+   198,
+   661,
+   225,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_transmitter.lb_transmitter_status",
+  "cls": "QLabel",
+  "name": "Connected",
+  "value": "",
+  "rect": [
+   433,
+   661,
+   225,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   162,
+   786,
+   526,
+   234
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification.lb_pop_up",
+  "cls": "QLabel",
+  "name": "POP-UP BATTERY NOTIFICATIONS",
+  "value": "",
+  "rect": [
+   198,
+   910,
+   393,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification.btn_pop_up",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   601,
+   910,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification.lb_battery_tray_icon",
+  "cls": "QLabel",
+  "name": "BATTERY STATUS AS TRAY ICON",
+  "value": "",
+  "rect": [
+   198,
+   967,
+   393,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification.btn_battery_tray_icon",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   601,
+   967,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.wireless_headset_device_status_func_fm_c.wg_main.wg_notification.lb_notification",
+  "cls": "QLabel",
+  "name": "NOTIFICATIONS",
+  "value": "",
+  "rect": [
+   198,
+   802,
+   460,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c",
+  "cls": "power_options_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   715,
+   175,
+   526,
+   270
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   715,
+   175,
+   526,
+   270
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   219,
+   460,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "POWER OPTIONS",
+  "value": "",
+  "rect": [
+   751,
+   219,
+   328,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1176,
+   219,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.widget.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1110,
+   219,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   285,
+   460,
+   124
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.wg_content.wg_btn_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   285,
+   460,
+   124
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.wg_content.wg_btn_area.lb_auto_shutoff",
+  "cls": "QLabel",
+  "name": "AUTO SHUT-OFF",
+  "value": "",
+  "rect": [
+   751,
+   316,
+   231,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.power_options_func_fm_c.wg_main.wg_content.wg_btn_area.cb_auto_shutoff",
+  "cls": "roccat_combobox_c",
+  "name": "",
+  "value": "30 minutes",
+  "rect": [
+   982,
+   316,
+   229,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c",
+  "cls": "voice_tone_prompt_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   175,
+   526,
+   271
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1269,
+   175,
+   526,
+   271
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   300,
+   460,
+   117
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_title_chatmix",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   300,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_title_chatmix.label_title_levels",
+  "cls": "QLabel",
+  "name": "LEVELS",
+  "value": "",
+  "rect": [
+   1305,
+   300,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_area_voice",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   366,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   366,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.label_mini_voice",
+  "cls": "QLabel",
+  "name": "0",
+  "value": "",
+  "rect": [
+   1305,
+   372,
+   48,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.slider_levels",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1353,
+   372,
+   364,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.label_max_voice",
+  "cls": "QLabel",
+  "name": "15",
+  "value": "",
+  "rect": [
+   1717,
+   372,
+   48,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1305,
+   219,
+   460,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1729,
+   219,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "VOICE & TONE PROMPTS",
+  "value": "",
+  "rect": [
+   1305,
+   219,
+   328,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.voice_tone_prompt_func_fm_c.wg_main.widget.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1663,
+   219,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c",
+  "cls": "transmitter_func_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   715,
+   474,
+   526,
+   271
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   715,
+   474,
+   526,
+   271
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   598,
+   460,
+   117
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_title_chatmix",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   598,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_title_chatmix.label_title_chatmix",
+  "cls": "QLabel",
+  "name": "LED BRIGHTNESS",
+  "value": "",
+  "rect": [
+   751,
+   598,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_area_voice",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   664,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   664,
+   460,
+   51
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.label_mini_voice",
+  "cls": "QLabel",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   670,
+   48,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.slider_brightness",
+  "cls": "roccat_slider_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   799,
+   670,
+   364,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.wg_content.wg_area_voice.wg_slider_voice.label_max_voice",
+  "cls": "QLabel",
+  "name": "",
+  "value": "",
+  "rect": [
+   1164,
+   670,
+   48,
+   37
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   751,
+   517,
+   460,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.widget.btn_reset",
+  "cls": "roccat_rotation_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1110,
+   517,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.widget.btn_info",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1176,
+   517,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.wg_additional.transmitter_func_fm_c.wg_main.widget.lb_func_name",
+  "cls": "elide_label_c",
+  "name": "TRANSMITTER",
+  "value": "",
+  "rect": [
+   751,
+   517,
+   328,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.scrollArea.qt_scrollarea_vcontainer",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1797,
+   195,
+   63,
+   885
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_scrollbar_c",
+  "name": "",
+  "value": "1229",
+  "rect": [
+   1797,
+   195,
+   63,
+   885
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   123
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.lb_device_name",
+  "cls": "QLabel",
+  "name": "ATLAS\u2122",
+  "value": "",
+  "rect": [
+   165,
+   87,
+   160,
+   43
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.lb_version",
+  "cls": "QLabel",
+  "name": "AIR",
+  "value": "",
+  "rect": [
+   325,
+   87,
+   55,
+   43
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.lb_tab_name",
+  "cls": "QLabel",
+  "name": "ADDITIONAL SETTINGS",
+  "value": "",
+  "rect": [
+   165,
+   147,
+   646,
+   30
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.wg_profile",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1258,
+   81,
+   439,
+   61
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "profile_dropdown_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1258,
+   81,
+   439,
+   61
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.wg_saperator",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1714,
+   81,
+   3,
+   54
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.btn_win",
+  "cls": "roccat_scaled_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1732,
+   84,
+   54,
+   54
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_device_widget.main_page_fm_c.wg_title.wg_device_icon",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   387,
+   91,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar",
+  "cls": "QTabBar",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar.ScrollLeftButton",
+  "cls": "QToolButton",
+  "name": "Scroll Left",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar.ScrollRightButton",
+  "cls": "QToolButton",
+  "name": "Scroll Right",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c",
+  "cls": "general_settings_mgr_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_left_panel",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   471,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_left_panel.tab_navigation",
+  "cls": "roccat_text_tab_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   810,
+   471,
+   234
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_left_panel.wg_bookmark",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   471,
+   738
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_left_panel.wg_bookmark.lb_setting_name",
+  "cls": "QLabel",
+  "name": "SETTINGS",
+  "value": "",
+  "rect": [
+   132,
+   72,
+   399,
+   72
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_left_panel.wg_bookmark.btn_back",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   72
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "UPDATES",
+  "value": "",
+  "rect": [
+   138,
+   171,
+   393,
+   60
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "LANGUAGE",
+  "value": "",
+  "rect": [
+   138,
+   231,
+   393,
+   60
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "APP SETTINGS",
+  "value": "",
+  "rect": [
+   138,
+   291,
+   393,
+   60
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "NOTIFICATIONS & TOOLTIPS",
+  "value": "",
+  "rect": [
+   138,
+   351,
+   393,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   72,
+   1329,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_top_space",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   72,
+   1329,
+   72
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   144,
+   1329,
+   900
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea",
+  "cls": "QScrollArea",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   144,
+   1329,
+   900
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   144,
+   1290,
+   900
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   -1098,
+   1290,
+   2142
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c",
+  "cls": "general_settings_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   531,
+   -1098,
+   1290,
+   2142
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -1083,
+   861,
+   2112
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -1083,
+   861,
+   864
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_search",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -843,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_search.lb_auto_search",
+  "cls": "QLabel",
+  "name": "SEARCH FOR UPDATES AUTOMATICALLY",
+  "value": "",
+  "rect": [
+   745,
+   -843,
+   804,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_search.switch_autosearch",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1549,
+   -829,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_updates_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -1083,
+   861,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_updates_title.lb_updates",
+  "cls": "QLabel",
+  "name": "UPDATES",
+  "value": "",
+  "rect": [
+   745,
+   -1083,
+   825,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_updates_title.wg_updates_info",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   -1083,
+   36,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_updates_title.wg_updates_info.btn_info_updates",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   -1059,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_download",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -951,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_download.lb_auto_download",
+  "cls": "QLabel",
+  "name": "DOWNLOAD UPDATES AUTOMATICALLY",
+  "value": "",
+  "rect": [
+   745,
+   -951,
+   804,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_auto_download.switch_autodownload",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1549,
+   -937,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -534,
+   861,
+   315
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c",
+  "cls": "swarm_panel_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -534,
+   861,
+   315
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -534,
+   861,
+   315
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_logo",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   784,
+   -534,
+   217,
+   315
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1041,
+   -534,
+   565,
+   315
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1041,
+   -498,
+   529,
+   183
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content.lb_module_name",
+  "cls": "QLabel",
+  "name": "SWARM II",
+  "value": "",
+  "rect": [
+   1048,
+   -414,
+   136,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content.lb_module_version",
+  "cls": "QLabel",
+  "name": "1.0.0.59",
+  "value": "",
+  "rect": [
+   1192,
+   -414,
+   96,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content.btn_option",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1534,
+   -498,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content.wg_status_sign",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1041,
+   -375,
+   36,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_module_version_content.lb_version_description",
+  "cls": "elide_label_c",
+  "name": "Drivers are up to date",
+  "value": "",
+  "rect": [
+   1080,
+   -375,
+   487,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.wg_swarm_state.module_panel_base_fm_c.wg_module_content.wg_module_version.wg_update_btn_left_space",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1041,
+   -315,
+   265,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.lb_last_auto_search",
+  "cls": "QLabel",
+  "name": "Automatically check for new updates. The update will be installed only after confirmation. Last search for updates: 10/14/2026 - 6:43 pm",
+  "value": "",
+  "rect": [
+   745,
+   -735,
+   861,
+   45
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -642,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.widget.widget_2",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -642,
+   570,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_updates.widget.btn_search",
+  "cls": "roccat_button_c",
+  "name": "Search for updates",
+  "value": "",
+  "rect": [
+   1315,
+   -642,
+   291,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   213,
+   861,
+   192
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   213,
+   861,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_title.lb_app_settings",
+  "cls": "QLabel",
+  "name": "APP SETTINGS",
+  "value": "",
+  "rect": [
+   745,
+   213,
+   825,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_title.wg_app_settings_info",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   213,
+   36,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_title.wg_app_settings_info.btn_info_app_settings",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   237,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   345,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_content.lb_autostart_swarm",
+  "cls": "QLabel",
+  "name": "AUTOSTART SWARM II",
+  "value": "",
+  "rect": [
+   745,
+   345,
+   804,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_autostart.wg_autostart_content.switch_autostart",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1549,
+   358,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   525,
+   861,
+   192
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   525,
+   861,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_title.lb_notify",
+  "cls": "QLabel",
+  "name": "NOTIFICATIONS & TOOLTIPS",
+  "value": "",
+  "rect": [
+   745,
+   525,
+   825,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_title.wg_notify_info",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   525,
+   36,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_title.wg_notify_info.btn_info_notify",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   549,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   657,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_content.lb_show_notify",
+  "cls": "QLabel",
+  "name": "SHOW UPDATE NOTIFICATION",
+  "value": "",
+  "rect": [
+   745,
+   657,
+   804,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_notification.wg_notify_content.switch_show_notify",
+  "cls": "roccat_switch_box_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1549,
+   670,
+   57,
+   33
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -99,
+   861,
+   192
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   33,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_content.cb_language",
+  "cls": "roccat_combobox_c",
+  "name": "",
+  "value": "English",
+  "rect": [
+   1306,
+   33,
+   300,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_content.lb_select_language",
+  "cls": "QLabel",
+  "name": "SELECT LANGUAGE",
+  "value": "",
+  "rect": [
+   745,
+   33,
+   561,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   -99,
+   861,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_title.lb_language",
+  "cls": "QLabel",
+  "name": "LANGUAGE",
+  "value": "",
+  "rect": [
+   745,
+   -99,
+   825,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_title.wg_language_info",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   -99,
+   36,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_language.wg_language_title.wg_language_info.btn_info_language",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   -75,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   837,
+   861,
+   192
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_title",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   837,
+   861,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_title.lb_eula",
+  "cls": "QLabel",
+  "name": "EULA",
+  "value": "",
+  "rect": [
+   745,
+   837,
+   825,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_title.wg_eula_info",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   837,
+   36,
+   84
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_title.wg_eula_info.btn_info_eula",
+  "cls": "roccat_fade_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1570,
+   861,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   745,
+   969,
+   861,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_content.lb_download_eula",
+  "cls": "QLabel",
+  "name": "DOWNLOAD END-USER LICENSE AGREEMENT",
+  "value": "",
+  "rect": [
+   745,
+   969,
+   661,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_viewport.scrollAreaWidgetContents.general_settings_fm_c.wg_content.wg_eula_panel.wg_eula_content.btn_download_eula",
+  "cls": "roccat_button_c",
+  "name": "Download",
+  "value": "",
+  "rect": [
+   1407,
+   969,
+   199,
+   60
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.general_settings_mgr_fm_c.wg_settings_container.wg_settings_panel.wg_settings_item.scrollArea.qt_scrollarea_vcontainer",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1821,
+   144,
+   39,
+   900
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_scrollbar_c",
+  "name": "",
+  "value": "828",
+  "rect": [
+   1821,
+   144,
+   39,
+   900
+  ]
+ }
+]

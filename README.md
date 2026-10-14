@@ -15,7 +15,16 @@ now they say what they are: "Chat boost mode, combo box, BOLD",
 "Reset Audio, button", "Microphone help, button".
 
 **A settings list.** While Swarm II's main window has focus, the arrow keys
-walk a list of every setting on the device page:
+walk a list of every setting on whichever screen Swarm II is showing:
+
+* **the home screen**, where the list offers your headset ("Atlas Air,
+  button, PC") and Enter opens its settings;
+* **the headset's settings page** (audio, microphone, equalizer, device
+  status, power, voice prompts, transmitter);
+* **Swarm II's own Settings** (the gear in its sidebar): updates, language,
+  autostart and notifications.
+
+When Swarm II changes screen, the list follows on your next key press.
 
 | Key | Does |
 | --- | --- |
@@ -77,8 +86,12 @@ on for its switches and sliders. That has consequences:
   and not yet in the settings list, and neither is the Game / Mic switch
   above the bands, so check which one is selected before editing.
 
-Only the device settings page is covered. Macro Manager, the app's own
-settings and Device Manager are not.
+Macro Manager and Device Manager are not covered yet.
+
+**If Swarm II suddenly reads as silence or gibberish,** check its language:
+after one restart it switched itself to Traditional Chinese. The add-on reads
+whatever Swarm II shows, so Settings > Language > Select language, which the
+list reaches, puts it right.
 
 ## Installing
 
@@ -98,11 +111,20 @@ rectangle. From those two facts alone:
    names, but they do give the slider its range. A switch, slider and combo
    box that share one label become "Noise gate", "Noise gate level" and
    "Chat boost mode". The text itself comes from Swarm II.
-2. **Scrolling** (`page.py`). The page's scrollbar does expose a working
+2. **Which screen is showing** (`model.py`, `page.py`). Swarm II marks
+   nothing as offscreen. The home screen and the device page replace each
+   other in the tree, but its app Settings open as a panel laid over the
+   device page, which stays in the tree at stale positions. Qt paints a
+   widget's later children over its earlier ones, so a panel wholly inside a
+   later sibling's rectangle is treated as hidden. A screen change is spotted
+   by comparing the children of two containers, which takes under 2 ms, so
+   it is checked on every key press.
+3. **Scrolling** (`page.py`). Each scroll area's bar does expose a working
    RangeValue pattern, so off-screen controls are scrolled into view without
-   touching the mouse. Its units are Qt's logical pixels, so the add-on
-   converts using the page's own measured travel.
-3. **Reading** (`pixels.py`, `screen.py`). The control's rectangle is copied
+   touching the mouse. The bar has no object name; it is found standing
+   against its viewport's right edge. Its units are Qt's logical pixels, so
+   the add-on converts using the content's own measured travel.
+4. **Reading** (`pixels.py`, `screen.py`). The control's rectangle is copied
    off the screen. A switch is on when its middle row is mostly Swarm II's
    purple and the white knob is on the right. A slider's thumb is the only
    tall, light, colourless blob in its rectangle; a dim grey thumb means the
@@ -110,7 +132,7 @@ rectangle. From those two facts alone:
    thumb's centre stops short of each end was measured on the live app and
    is stored as a share of the slider's thickness, so it scales with
    Windows' display scaling.
-4. **Changing** (`page.py`, `screen.py`). A switch is clicked in its centre.
+5. **Changing** (`page.py`, `screen.py`). A switch is clicked in its centre.
    A slider's thumb is dragged to the position for the new value; Swarm II
    ignores drags of only a few pixels, so a small correction is made as two
    drags, away and back. The control is then read again and **what the

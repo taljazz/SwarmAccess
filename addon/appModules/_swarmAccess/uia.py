@@ -26,6 +26,7 @@ UIA_ExpandCollapsePatternId = 10005
 UIA_SelectionItemPatternId = 10010
 ExpandCollapseState_Collapsed = 0
 TreeScope_Element = 1
+TreeScope_Children = 2
 TreeScope_Descendants = 4
 
 _PROPERTIES = (

@@ -240,7 +240,9 @@ class AppModule(appModuleHandler.AppModule):
             return False
         if self._ensure_page(focus.windowHandle) is None:
             return False
-        if not self._page.settings:
+        if not self._page.settings or self._page.page_changed():
+            # Swarm II switched screens (home, device page, app Settings).
+            self._position = 0
             self._refresh()
         return bool(self._page.settings)
 

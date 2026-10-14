@@ -30,9 +30,18 @@ SLIDER_ATTEMPTS = 5
 SMALL_DRAG = 10  # pixels
 POPUP_SETTLE = 0.35
 
-VIEWPORT_SUFFIX = "main_page_fm_c.scrollArea.qt_scrollarea_viewport"
-CONTENT_SUFFIX = VIEWPORT_SUFFIX + ".scrollAreaWidgetContents"
+VIEWPORT_NAME = "qt_scrollarea_viewport"
+PAGE_CONTAINERS = {model.OVERLAY_NAME, "qt_tabwidget_stackedwidget"}
 SCROLLBAR_CLASS = "roccat_scrollbar_c"
+
+
+@dataclass
+class Scroller:
+    """One Qt scroll area: what shows, what moves, and the bar that moves it."""
+
+    viewport: object   # live UIA elements
+    content: object
+    scrollbar: object
 
 
 @dataclass
@@ -66,9 +75,9 @@ class SwarmPage:
         self.hwnd = hwnd
         self.settings: list[Setting] = []
         self._live: list = []
-        self._viewport = None
-        self._content = None
-        self._scrollbar = None
+        self._scrollers: dict[str, Scroller] = {}
+        self._page_parts: list = []      # live elements whose children say which page shows
+        self._signature: tuple = ()
 
     # -- snapshot -----------------------------------------------------------
 
@@ -78,20 +87,41 @@ class SwarmPage:
         snap, live = uia.take_snapshot(self.client, root)
         self._live = live
         self.settings = model.build_settings(snap)
-        self._viewport = self._content = self._scrollbar = None
-        viewport_rect = None
-        for element, live_element in zip(snap.elements, live):
-            if element.automation_id.endswith(VIEWPORT_SUFFIX):
-                self._viewport, viewport_rect = live_element, element.rect
-            elif element.automation_id.endswith(CONTENT_SUFFIX):
-                self._content = live_element
-        if viewport_rect is not None:
-            # The page's scrollbar is the one standing against the viewport's right edge.
-            for element, live_element in zip(snap.elements, live):
-                if (element.class_name == SCROLLBAR_CLASS and element.rect is not None
-                        and abs(element.rect.left - viewport_rect.right) <= 8
-                        and abs(element.rect.top - viewport_rect.top) <= 8):
-                    self._scrollbar = live_element
+        # Which page is showing comes down to the children of two containers:
+        # the overlay (an app Settings panel is added over the device page)
+        # and the module stack (home screen or device page).
+        self._page_parts = [live[e.index] for e in snap.elements
+                            if e.object_name in PAGE_CONTAINERS]
+        self._signature = self._current_signature()
+        self._scrollers = {}
+        # Every scroll area: the device page has one, the app Settings screen
+        # another.  A scroll area's bar has no object name, so it is matched
+        # by standing against the viewport's right edge.
+        bars = [e for e in snap.elements if e.class_name == SCROLLBAR_CLASS and e.rect is not None]
+        for viewport in snap.elements:
+            if viewport.object_name != VIEWPORT_NAME or viewport.rect is None:
+                continue
+            content = next((e for e in snap.elements if e.parent_path == viewport.automation_id), None)
+            bar = next((b for b in bars
+                        if abs(b.rect.left - viewport.rect.right) <= 8
+                        and abs(b.rect.top - viewport.rect.top) <= 8), None)
+            if content is not None and bar is not None:
+                self._scrollers[viewport.automation_id] = Scroller(
+                    live[viewport.index], live[content.index], live[bar.index])
+
+    def _current_signature(self) -> tuple:
+        children = []
+        for part in self._page_parts:
+            found = part.FindAll(uia.TreeScope_Children, self.client.CreateTrueCondition())
+            children.append(tuple(found.GetElement(i).CurrentAutomationId for i in range(found.Length)))
+        return tuple(children)
+
+    def page_changed(self) -> bool:
+        """True when Swarm II has switched screens since the list was built (under a millisecond)."""
+        try:
+            return self._current_signature() != self._signature
+        except Exception:  # the containers themselves are gone
+            return True
 
     def live(self, element: model.Element):
         return self._live[element.index]
@@ -106,19 +136,24 @@ class SwarmPage:
         rect = self.rect(setting)
         if rect is None:
             return None
-        viewport = uia.current_rect(self._viewport) if self._viewport is not None else None
-        if viewport is not None and not viewport.contains(rect) and self._scroll_to(rect, viewport):
+        scroller = self._scroller_for(setting)
+        viewport = uia.current_rect(scroller.viewport) if scroller is not None else None
+        if viewport is not None and not viewport.contains(rect) and self._scroll_to(scroller, rect, viewport):
             time.sleep(SCROLL_SETTLE)
             rect = self.rect(setting)
         if rect is None or not screen.is_showing(self.hwnd, rect):
             return None
         return rect
 
-    def _scroll_to(self, rect: Rect, viewport: Rect) -> bool:
-        if self._scrollbar is None or self._content is None:
-            return False
-        content = uia.current_rect(self._content)
-        pattern = uia.range_value_pattern(self._scrollbar, self.range_value_interface)
+    def _scroller_for(self, setting: Setting) -> Optional[Scroller]:
+        """The innermost scroll area holding the control."""
+        aid = setting.element.automation_id
+        holders = [v for v in self._scrollers if aid.startswith(v + ".")]
+        return self._scrollers[max(holders, key=len)] if holders else None
+
+    def _scroll_to(self, scroller: Scroller, rect: Rect, viewport: Rect) -> bool:
+        content = uia.current_rect(scroller.content)
+        pattern = uia.range_value_pattern(scroller.scrollbar, self.range_value_interface)
         if content is None or pattern is None:
             return False
         low, high = pattern.CurrentMinimum, pattern.CurrentMaximum
