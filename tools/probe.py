@@ -41,10 +41,29 @@ def client():
 
 
 def swarm_window() -> int:
-    hwnd = ctypes.windll.user32.FindWindowW(None, WINDOW_TITLE)
-    if not hwnd:
+    """Swarm II's main window: the largest visible one with its title.
+
+    Swarm II also keeps a hidden window with the same title, so FindWindow
+    alone can return the wrong one.
+    """
+    from ctypes import wintypes
+    user32 = ctypes.windll.user32
+    found = []
+
+    @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+    def visit(hwnd, _):
+        buffer = ctypes.create_unicode_buffer(256)
+        user32.GetWindowTextW(hwnd, buffer, 256)
+        if buffer.value == WINDOW_TITLE and user32.IsWindowVisible(hwnd):
+            rect = wintypes.RECT()
+            user32.GetWindowRect(hwnd, ctypes.byref(rect))
+            found.append(((rect.right - rect.left) * (rect.bottom - rect.top), hwnd))
+        return True
+
+    user32.EnumWindows(visit, 0)
+    if not found:
         sys.exit("Swarm II's window was not found.")
-    return hwnd
+    return max(found)[1]
 
 
 def snapshot():

@@ -60,6 +60,21 @@ class RecordedPixelTests(unittest.TestCase):
         self.assertTrue(enabled)
         self.assertEqual(slider().snap(value), 50)
 
+    def test_sliders_at_their_maximum(self):
+        for name, maximum in (("slider_monitoring_100.png", 100), ("slider_led.png", 100),
+                              ("slider_voice_15.png", 15)):
+            setting = slider(0, maximum)
+            value, enabled = pixels.read_slider(source(name), setting)
+            self.assertEqual(setting.snap(value), maximum, name)
+
+    def test_noise_gate_low(self):
+        value, _ = pixels.read_slider(source("slider_noise_gate.png"), slider())
+        self.assertEqual(slider().snap(value), 16)
+
+    def test_microphone_switches(self):
+        self.assertIs(pixels.read_switch(source("switch_mute_off.png")), False)
+        self.assertIs(pixels.read_switch(source("switch_noise_on.png")), True)
+
     def test_equalizer_band_flat(self):
         band = slider(-9, 9, vertical=True)
         value, enabled = pixels.read_slider(source("eq_band_0db.png"), band)

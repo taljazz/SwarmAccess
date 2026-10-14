@@ -12,8 +12,10 @@ at it, the way a sighted user does:
   the slider is disabled), so the thumb's centre is found from the columns
   (rows, for the vertical equalizer bands) holding the most such pixels.
 
-The thumb's centre never reaches the very ends of the rectangle: it stops
-``THUMB_INSET`` pixels short of each end, measured on the live app.
+The thumb's centre never reaches the very ends of the rectangle; how far
+short it stops was measured on the live app (see ``HORIZONTAL_INSETS`` and
+``EQUALIZER_INSETS``).  The distances are kept as a share of the slider's
+thickness, so they scale with Windows' display scaling just as the widgets do.
 
 Everything here works on a ``PixelSource``, so the tests can feed in recorded
 pixels and NVDA can feed in a fresh screen capture.
@@ -25,9 +27,17 @@ from typing import Optional, Sequence, Tuple
 
 Pixel = Tuple[int, int, int]
 
-# Distance, in physical pixels, from either end of a slider's rectangle to the
-# thumb's centre at that end of the range.  Measured 2026-10-14; see README.
-THUMB_INSET = 12.0
+# How far the thumb's centre stays from each end of a slider's rectangle, as a
+# share of the slider's thickness (37 pixels at 150% scaling).
+#
+# Horizontal sliders: 16 pixels at each end, where the drawn track begins and
+# ends; checked at 50 (Game chat mix), 100 (Monitoring, LED brightness) and
+# 15 of 15 (voice prompt level).  Equalizer bands, measured against Swarm II's own "+3.1 dB" label and
+# the 0 dB line on 2026-10-14: the thumb is 17.4 pixels from the top at +9 dB
+# and 14.4 from the bottom at -9 dB, which puts 0 dB 1.5 pixels below the
+# middle.  (start, end) means (left, right) or (top, bottom).
+HORIZONTAL_INSETS = (16 / 37, 16 / 37)
+EQUALIZER_INSETS = (17.4 / 37, 14.4 / 37)
 
 # A switch counts as on when at least this share of its middle row is purple.
 SWITCH_ON_SHARE = 0.25
@@ -142,26 +152,32 @@ def thumb_center(src: PixelSource, vertical: bool = False) -> tuple[Optional[flo
     return _thumb_run(src, vertical, DISABLED_FLOOR), False
 
 
+def insets_for(setting, thickness: int) -> tuple[float, float]:
+    """The thumb's travel limits for ``setting``, in pixels, at this thickness."""
+    shares = EQUALIZER_INSETS if setting.vertical else HORIZONTAL_INSETS
+    return shares[0] * thickness, shares[1] * thickness
+
+
 def value_from_position(position: float, length: int, minimum: float, maximum: float,
-                        vertical: bool = False, inset: float = THUMB_INSET) -> float:
+                        vertical: bool = False, insets: tuple[float, float] = (12.0, 12.0)) -> float:
     """Turn a thumb position into a slider value.  Vertical sliders grow upwards."""
-    usable = max(1.0, length - 2 * inset)
-    fraction = (position - inset) / usable
-    fraction = max(0.0, min(1.0, fraction))
+    start, end = insets
+    usable = max(1.0, length - start - end)
+    fraction = max(0.0, min(1.0, (position - start) / usable))
     if vertical:
         fraction = 1.0 - fraction
     return minimum + fraction * (maximum - minimum)
 
 
 def position_for_value(value: float, length: int, minimum: float, maximum: float,
-                       vertical: bool = False, inset: float = THUMB_INSET) -> float:
+                       vertical: bool = False, insets: tuple[float, float] = (12.0, 12.0)) -> float:
     """Where to put the thumb's centre for ``value``: the inverse of value_from_position."""
+    start, end = insets
     span = maximum - minimum
-    fraction = 0.0 if span == 0 else (value - minimum) / span
-    fraction = max(0.0, min(1.0, fraction))
+    fraction = 0.0 if span == 0 else max(0.0, min(1.0, (value - minimum) / span))
     if vertical:
         fraction = 1.0 - fraction
-    return inset + fraction * max(1.0, length - 2 * inset)
+    return start + fraction * max(1.0, length - start - end)
 
 
 def read_slider(src: PixelSource, setting) -> tuple[Optional[float], bool]:
@@ -172,5 +188,7 @@ def read_slider(src: PixelSource, setting) -> tuple[Optional[float], bool]:
     center, enabled = thumb_center(src, setting.vertical)
     if center is None:
         return None, False
-    length = src.height if setting.vertical else src.width
-    return value_from_position(center, length, setting.minimum, setting.maximum, setting.vertical), enabled
+    length, thickness = (src.height, src.width) if setting.vertical else (src.width, src.height)
+    value = value_from_position(center, length, setting.minimum, setting.maximum, setting.vertical,
+                                insets_for(setting, thickness))
+    return value, enabled

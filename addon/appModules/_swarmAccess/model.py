@@ -157,20 +157,26 @@ class Setting:
         return self.kind == SLIDER and self.vertical
 
     @property
+    def resolution(self) -> float:
+        """The smallest change Swarm II makes: 0.1 dB on the equalizer, 1 elsewhere."""
+        return 0.1 if self.unit == "dB" else 1.0
+
+    @property
     def step(self) -> float:
         """Left/Right arrow step: 5 on a 0-100 slider, 1 on anything smaller."""
         return 5.0 if self.maximum - self.minimum >= 50 else 1.0
 
     @property
     def fine_step(self) -> float:
-        return 1.0
+        """Shift+Left/Right: the smallest step Swarm II has."""
+        return self.resolution
 
     def clamp(self, value: float) -> float:
         return max(self.minimum, min(self.maximum, value))
 
     def snap(self, value: float) -> float:
-        """Round a measured value to the nearest whole step Swarm II can hold."""
-        return self.clamp(round(value))
+        """Round a measured value to the nearest step Swarm II can hold."""
+        return self.clamp(round(round(value / self.resolution) * self.resolution, 1))
 
     def format_value(self, value: Optional[float]) -> str:
         if value is None:

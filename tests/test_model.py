@@ -130,7 +130,8 @@ class LabelTests(unittest.TestCase):
         self.assertEqual(mix.format_value(30), "30, toward game")
         band = model.Setting("k", model.SLIDER, "32 Hz", "", element, minimum=-9, maximum=9,
                              vertical=True, unit="dB")
-        self.assertEqual(band.format_value(3.2), "+3 dB")
+        self.assertEqual(band.format_value(3.14), "+3.1 dB")
+        self.assertEqual(band.format_value(-0.04), "0 dB")
         self.assertEqual(band.format_value(-12), "-9 dB")
         self.assertEqual(band.format_value(None), "unknown")
 

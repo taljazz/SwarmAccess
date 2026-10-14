@@ -138,7 +138,7 @@ def drag(from_x: int, from_y: int, to_x: int, to_y: int, settle: float = 0.03) -
     """Press at one point, move to another and release, then restore the pointer.
 
     A drag from the thumb works on any slider, whereas a click on the track
-    might only page the thumb towards the click; see README.
+    might only page the thumb towards the click.
     """
     original = cursor_position()
     try:
@@ -150,8 +150,8 @@ def drag(from_x: int, from_y: int, to_x: int, to_y: int, settle: float = 0.03) -
             # Move in a few steps so the widget sees a drag, not a jump.
             steps = 4
             for i in range(1, steps + 1):
-                user32.SetCursorPos(int(from_x + (to_x - from_x) * i / steps),
-                                    int(from_y + (to_y - from_y) * i / steps))
+                user32.SetCursorPos(int(round(from_x + (to_x - from_x) * i / steps)),
+                                    int(round(from_y + (to_y - from_y) * i / steps)))
                 time.sleep(settle)
         user32.mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
         time.sleep(settle)

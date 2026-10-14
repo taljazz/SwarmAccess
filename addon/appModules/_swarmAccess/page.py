@@ -26,6 +26,8 @@ from .model import Rect, Setting
 SCROLL_SETTLE = 0.12
 CHANGE_TIMEOUT = 0.8
 CHANGE_POLL = 0.05
+SLIDER_ATTEMPTS = 5
+SMALL_DRAG = 10  # pixels
 
 VIEWPORT_SUFFIX = "main_page_fm_c.scrollArea.qt_scrollarea_viewport"
 CONTENT_SUFFIX = VIEWPORT_SUFFIX + ".scrollAreaWidgetContents"
@@ -167,25 +169,94 @@ class SwarmPage:
         return before, self._wait_for_change(setting, before)
 
     def set_slider(self, setting: Setting, target: float) -> tuple[Reading, Reading]:
-        """Move a slider to ``target`` by dragging its thumb; returns the readings before and after."""
+        """Move a slider to ``target`` by dragging its thumb; returns the readings before and after.
+
+        Where Swarm II puts the thumb for a given drag wobbles by about one
+        step (0.1 dB on the equalizer, under 3 pixels), so the slider is read
+        back after each drag.  If it landed short or long, the aim is moved by
+        that many steps' worth of pixels (half as far once it has overshot) and
+        the thumb dragged again, up to ``SLIDER_ATTEMPTS`` drags in all.
+        """
         rect = self.bring_into_view(setting)
         if rect is None:
             return Reading(hidden=True), Reading(hidden=True)
-        captured = screen.capture(rect)
-        center, enabled = pixels.thumb_center(captured, setting.vertical)
         before = self._read_pixels(setting, rect)
-        if center is None or not enabled:
+        if before.value is None or not before.enabled:
             return before, before
-        target = setting.clamp(target)
-        length = rect.height if setting.vertical else rect.width
-        goal = pixels.position_for_value(target, length, setting.minimum, setting.maximum, setting.vertical)
+        target = setting.snap(target)
+        length, thickness = (rect.height, rect.width) if setting.vertical else (rect.width, rect.height)
+        insets = pixels.insets_for(setting, thickness)
+        goal = pixels.position_for_value(target, length, setting.minimum, setting.maximum, setting.vertical, insets)
+        pixels_per_unit = (length - insets[0] - insets[1]) / (setting.maximum - setting.minimum)
+        latest = before
+        gain = 1.0
+        last_miss = 0.0
+        for _attempt in range(SLIDER_ATTEMPTS):
+            if latest.value == target:
+                break
+            if not self._drag_thumb(setting, rect, goal):
+                break
+            landed = self._settled_reading(setting)
+            if landed.hidden or landed.value is None:
+                return before, landed
+            if landed.value != target:
+                # Aim off by however far it missed (upwards is smaller on a
+                # vertical slider).  If the last correction overshot, halve
+                # the next one, so the aim closes in from both sides.
+                miss = (target - landed.value) * pixels_per_unit
+                if miss * last_miss < 0:
+                    gain /= 2
+                last_miss = miss
+                goal += (-miss if setting.vertical else miss) * gain
+            latest = landed
+        return before, latest
+
+    def _drag_thumb(self, setting: Setting, rect: Rect, goal: float) -> bool:
+        """Drag the thumb from where it is drawn to ``goal`` (pixels from the slider's start)."""
+        center = self._thumb(setting, rect)
+        if center is None:
+            return False
+        if abs(goal - center) < SMALL_DRAG:
+            # Swarm II ignores a drag of only a few pixels, and one that swings
+            # out and back within a single press.  So a small correction is two
+            # drags: well away first, then back to the goal.
+            away = center - SMALL_DRAG * 2 if center - SMALL_DRAG * 2 > 0 else center + SMALL_DRAG * 2
+            self._drag_along(setting, rect, center, away)
+            time.sleep(CHANGE_POLL * 2)
+            center = self._thumb(setting, rect)
+            if center is None:
+                return False
+        self._drag_along(setting, rect, center, goal)
+        return True
+
+    def _thumb(self, setting: Setting, rect: Rect) -> Optional[float]:
+        center, enabled = pixels.thumb_center(screen.capture(rect), setting.vertical)
+        return center if enabled else None
+
+    @staticmethod
+    def _drag_along(setting: Setting, rect: Rect, start: float, end: float) -> None:
+        """Drag along the slider's axis between two positions measured from its start."""
         if setting.vertical:
             x = int(rect.center_x)
-            screen.drag(x, int(rect.top + center), x, int(round(rect.top + goal)))
+            screen.drag(x, int(round(rect.top + start)), x, int(round(rect.top + end)))
         else:
             y = int(rect.center_y)
-            screen.drag(int(rect.left + center), y, int(round(rect.left + goal)), y)
-        return before, self._wait_for_change(setting, before)
+            screen.drag(int(round(rect.left + start)), y, int(round(rect.left + end)), y)
+
+    def _settled_reading(self, setting: Setting) -> Reading:
+        """Read a control once it has stopped moving after a drag."""
+        time.sleep(SCROLL_SETTLE)
+        previous = None
+        deadline = time.monotonic() + CHANGE_TIMEOUT
+        while True:
+            rect = self.rect(setting)
+            if rect is None or not screen.is_showing(self.hwnd, rect):
+                return Reading(hidden=True)
+            reading = self._read_pixels(setting, rect)
+            if (previous is not None and reading.value == previous.value) or time.monotonic() > deadline:
+                return reading
+            previous = reading
+            time.sleep(CHANGE_POLL)
 
     def _wait_for_change(self, setting: Setting, before: Reading) -> Reading:
         """Read again until the control shows something new, or the timeout passes."""
