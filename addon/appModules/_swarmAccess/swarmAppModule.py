@@ -15,12 +15,16 @@ Two things happen here:
 
 from __future__ import annotations
 
+import ctypes
+from ctypes import wintypes
+
 import time
 
 import addonHandler
 import api
 import appModuleHandler
 import controlTypes
+import core
 import mouseHandler
 import ui
 import UIAHandler
@@ -61,6 +65,7 @@ PASS_THROUGH_ROLES = {
 # Spoken for each kind of setting, through NVDA's own role names so they
 # follow the user's language.
 ROLE_FOR_KIND = {
+    model.DEVICE: controlTypes.Role.BUTTON,
     model.SWITCH: controlTypes.Role.SWITCH,
     model.SLIDER: controlTypes.Role.SLIDER,
     model.COMBO: controlTypes.Role.COMBOBOX,
@@ -93,6 +98,24 @@ def _uia_class(obj) -> str:
         return obj.UIAElement.cachedClassName
     except Exception:  # not in NVDA's cache request on every version
         return obj.UIAElement.currentClassName
+
+
+def _find_main_window(process_id: int) -> int | None:
+    found = []
+
+    @ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
+    def visit(hwnd, _):
+        if (ctypes.windll.user32.IsWindowVisible(hwnd)
+                and winUser.getWindowThreadProcessID(hwnd)[0] == process_id
+                and winUser.getWindowText(hwnd) == WINDOW_TITLE
+                and winUser.getClassName(hwnd).endswith("QWindowIcon")):
+            rect = wintypes.RECT()
+            ctypes.windll.user32.GetWindowRect(hwnd, ctypes.byref(rect))
+            found.append(((rect.right - rect.left) * (rect.bottom - rect.top), hwnd))
+        return True
+
+    ctypes.windll.user32.EnumWindows(visit, 0)
+    return max(found)[1] if found else None
 
 
 class NamedSwarmControl(UIA):
@@ -166,15 +189,17 @@ class AppModule(appModuleHandler.AppModule):
     # -- the page -----------------------------------------------------------
 
     def _main_window(self, hwnd: int) -> int | None:
-        if not hwnd:
+        """Swarm II's visible main window, if ``hwnd`` belongs to Swarm II.
+
+        Swarm II keeps hidden top-level windows with the same title and class
+        as the real one, and a combo box's popup also shares the title (class
+        Qt...QWindowPopup...).  So the main window is found from the process,
+        as the largest visible Qt...QWindowIcon window titled like Swarm II,
+        never from wherever focus happens to be.
+        """
+        if not hwnd or winUser.getWindowThreadProcessID(hwnd)[0] != self.processID:
             return None
-        root = winUser.getAncestor(hwnd, winUser.GA_ROOT)
-        # A combo box's popup is a top-level window with the same title, but
-        # its class is Qt...QWindowPopup...; the main window's is Qt...QWindowIcon.
-        if (root and winUser.getWindowText(root) == WINDOW_TITLE
-                and winUser.getClassName(root).endswith("QWindowIcon")):
-            return root
-        return None
+        return _find_main_window(self.processID)
 
     def _ensure_page(self, hwnd: int) -> SwarmPage | None:
         main = self._main_window(hwnd)
@@ -190,8 +215,10 @@ class AppModule(appModuleHandler.AppModule):
         try:
             self._page.refresh()
         except Exception:
-            log.error("SwarmAccess: could not read Swarm II's controls", exc_info=True)
+            # Most often the window was replaced; the next key press finds the new one.
+            log.debugWarning("SwarmAccess: could not read Swarm II's controls", exc_info=True)
             self._page.settings = []
+            self._page.hwnd = 0
         settings = self._page.settings
         keys = [s.key for s in settings]
         self._position = keys.index(previous) if previous in keys else min(self._position, max(0, len(keys) - 1))
@@ -271,6 +298,12 @@ class AppModule(appModuleHandler.AppModule):
             parts.append(setting.section)
         if setting.kind == model.STATUS:
             parts.append(f"{setting.label}: {reading.describe(setting)}")
+        elif setting.kind == model.DEVICE:
+            parts.append(setting.label)
+            parts.append(ROLE_FOR_KIND[setting.kind].displayString)
+            if reading.value:
+                parts.append(str(reading.value))
+            parts.append(_("press Enter to open its settings"))
         else:
             parts.append(setting.label)
             parts.append(ROLE_FOR_KIND[setting.kind].displayString)
@@ -279,7 +312,20 @@ class AppModule(appModuleHandler.AppModule):
 
     def _announce_current(self, previous_section: str | None = None) -> None:
         setting = self._setting
-        reading = self._page.read(setting)
+        try:
+            reading = self._page.read(setting)
+        except Exception:
+            # The control has gone: Swarm II moved to another page (home
+            # screen, app settings) since the list was built.  Start again.
+            log.debugWarning("SwarmAccess: stale control, rebuilding the list", exc_info=True)
+            self._position = 0
+            self._refresh()
+            if not self._page.settings:
+                ui.message(_("No settings on this page"))
+                return
+            setting = self._setting
+            reading = self._page.read(setting)
+            previous_section = None
         ui.message(self._describe(setting, reading, setting.section != previous_section))
 
     def _move_to(self, index: int) -> None:
@@ -296,6 +342,14 @@ class AppModule(appModuleHandler.AppModule):
             ui.message(_("{label} did not change, still {value}").format(label=setting.label, value=after.describe(setting)))
         else:
             ui.message(after.describe(setting))
+
+    def _after_page_change(self) -> None:
+        self._position = 0
+        self._refresh()
+        if self._page.settings:
+            self._announce_current(None)
+        else:
+            ui.message(_("No settings on this page"))
 
     # -- scripts --------------------------------------------------------------
 
@@ -357,6 +411,12 @@ class AppModule(appModuleHandler.AppModule):
         if setting.kind == model.SWITCH:
             before, after = self._click(lambda: self._page.toggle(setting))
             self._report_change(setting, before, after)
+        elif setting.kind == model.DEVICE:
+            if not self._click(lambda: self._page.open_device(setting)):
+                ui.message(_("{label} is not visible. Bring Swarm II to the front and try again.").format(label=setting.label))
+                return
+            # Give Swarm II a moment to build the settings page, then list it.
+            core.callLater(1500, self._after_page_change)
         elif setting.kind == model.COMBO:
             # Swarm II's own list takes it from here: focus lands on the chosen
             # option, the list keys detach, and Up, Down and Enter are Qt's.

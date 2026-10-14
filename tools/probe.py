@@ -95,6 +95,15 @@ def cmd_list(args):
         print(f"  {s.label}, {s.kind}, {reading.describe(s)}    [{where}]")
 
 
+def cmd_open(_args):
+    """On Swarm II's home screen, open the first headset's settings page."""
+    swarm = open_page()
+    device = next((s for s in swarm.settings if s.kind == model.DEVICE), None)
+    if device is None:
+        sys.exit("No headset tile on this screen.")
+    print("opened" if swarm.open_device(device) else "could not click it", device.label)
+
+
 def find_setting(swarm, label):
     wanted = label.lower()
     for s in swarm.settings:
@@ -162,7 +171,7 @@ def cmd_grab(args):
     print(f"{setting.label}: {setting.rect} saved to {args[1]}")
 
 
-COMMANDS = {"list": cmd_list, "set": cmd_set, "snapshot": cmd_snapshot, "scroll": cmd_scroll, "grab": cmd_grab}
+COMMANDS = {"list": cmd_list, "set": cmd_set, "open": cmd_open, "snapshot": cmd_snapshot, "scroll": cmd_scroll, "grab": cmd_grab}
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:

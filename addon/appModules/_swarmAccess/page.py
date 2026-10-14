@@ -73,6 +73,7 @@ class SwarmPage:
     # -- snapshot -----------------------------------------------------------
 
     def refresh(self) -> None:
+        """Rebuild the list.  Raises COMError if the window has gone away."""
         root = self.client.ElementFromHandle(self.hwnd)
         snap, live = uia.take_snapshot(self.client, root)
         self._live = live
@@ -134,7 +135,7 @@ class SwarmPage:
     # -- reading ------------------------------------------------------------
 
     def read(self, setting: Setting, scroll: bool = True) -> Reading:
-        if setting.kind == model.STATUS:
+        if setting.kind in (model.STATUS, model.DEVICE):
             text = ""
             if setting.value_element is not None:
                 text = uia.current_name(self.live(setting.value_element)).strip()
@@ -345,6 +346,21 @@ class SwarmPage:
                 return True
             time.sleep(CHANGE_POLL)
         return False
+
+    def open_device(self, setting: Setting) -> bool:
+        """Click a headset's tile on the home screen to open its settings page.
+
+        Only the click point has to be Swarm II's: the tile fills the window,
+        so a window covering one corner of it does not matter.
+        """
+        rect = self.rect(setting)
+        if rect is None:
+            return False
+        x, y = int(rect.center_x), int(rect.center_y)
+        if screen.window_at(x, y) != self.hwnd:
+            return False
+        screen.click(x, y)
+        return True
 
     def focus(self, setting: Setting) -> None:
         """Give keyboard focus to a real Swarm II control (the combo boxes can take it)."""

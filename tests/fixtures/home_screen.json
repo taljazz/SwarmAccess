@@ -1,0 +1,577 @@
+[
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   -36,
+   1800,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   -36,
+   300,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.wg_logo",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   84,
+   4,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   9,
+   3,
+   25
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_logo_area.lb_swarm_ii",
+  "cls": "QLabel",
+  "name": "SWARM II",
+  "value": "",
+  "rect": [
+   150,
+   4,
+   241,
+   36
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_global_profile_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   360,
+   -36,
+   813,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1173,
+   -36,
+   375,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c",
+  "cls": "process_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1173,
+   -36,
+   375,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c.lb_status",
+  "cls": "QLabel",
+  "name": "",
+  "value": "",
+  "rect": [
+   1492,
+   -36,
+   10,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_process_area.process_fm_c.lb_icon",
+  "cls": "QLabel",
+  "name": "",
+  "value": "",
+  "rect": [
+   1509,
+   -1,
+   39,
+   39
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_notification_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1548,
+   -36,
+   84,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_notification_area.wg_notification_btn",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1566,
+   -6,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QPushButton",
+  "name": "",
+  "value": "",
+  "rect": [
+   1566,
+   -6,
+   48,
+   48
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1632,
+   -36,
+   228,
+   108
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_minimized",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1650,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_close",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1779,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_title_bar_area.wg_windows_control_area.btn_maximized",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   1714,
+   -3,
+   60,
+   42
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   1800,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_controls",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   732,
+   72,
+   312
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   732,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   810,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   888,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "roccat_colorize_button_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   966,
+   72,
+   78
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_back",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   72,
+   72,
+   141
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_device_controls",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   213,
+   72,
+   259
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.wg_device_controls.buttons_tab",
+  "cls": "roccat_tab_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   213,
+   72,
+   259
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_side_bar_area.line",
+  "cls": "QFrame",
+  "name": "",
+  "value": "",
+  "rect": [
+   60,
+   472,
+   72,
+   259
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   132,
+   72,
+   1728,
+   1044
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget",
+  "cls": "QTabWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget",
+  "cls": "QStackedWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_layout_widget",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1725,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_layout_widget.scrollArea_devices",
+  "cls": "QScrollArea",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1710,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_layout_widget.scrollArea_devices.qt_scrollarea_viewport",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1710,
+   1008
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_stackedwidget.tab_layout_widget.scrollArea_devices.qt_scrollarea_viewport.scrollAreaDevicesWidgetContents",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1710,
+   1008
+  ]
+ },
+ {
+  "aid": "",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1683,
+   1008
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c",
+  "cls": "module_widget_fm_c",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1683,
+   1008
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   135,
+   72,
+   1683,
+   1008
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.lb_version",
+  "cls": "QLabel",
+  "name": "AIR",
+  "value": "",
+  "rect": [
+   277,
+   108,
+   39,
+   30
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.lb_device_name",
+  "cls": "QLabel",
+  "name": "ATLAS\u2122",
+  "value": "",
+  "rect": [
+   171,
+   108,
+   93,
+   30
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.wg_connection_ico",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1752,
+   102,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.wg_battery_ico",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   1716,
+   102,
+   36,
+   36
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.lb_device_status",
+  "cls": "QLabel",
+  "name": "PC",
+  "value": "",
+  "rect": [
+   1672,
+   102,
+   28,
+   36
+  ]
+ },
+ {
+  "aid": "module_widget_fm_c.wg_device_tile_background.wg_color_picker_ico",
+  "cls": "QWidget",
+  "name": "",
+  "value": "",
+  "rect": [
+   339,
+   97,
+   75,
+   75
+  ]
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar",
+  "cls": "QTabBar",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 1",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "",
+  "cls": "",
+  "name": "Tab 2",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar.ScrollLeftButton",
+  "cls": "QToolButton",
+  "name": "Scroll Left",
+  "value": "",
+  "rect": null
+ },
+ {
+  "aid": "swarm_kernel_fm_c.wg_main.wg_overlay.wg_module_content.wg_tabwidget.qt_tabwidget_tabbar.ScrollRightButton",
+  "cls": "QToolButton",
+  "name": "Scroll Right",
+  "value": "",
+  "rect": null
+ }
+]

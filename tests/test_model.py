@@ -85,6 +85,16 @@ class SettingsListTests(unittest.TestCase):
         self.assertEqual([s.label for s in scrolled], [s.label for s in self.settings])
 
 
+class HomeScreenTests(unittest.TestCase):
+    """Swarm II can open on its home screen, which has nothing Tab can reach."""
+
+    def test_the_headset_tile_is_listed(self):
+        settings = model.build_settings(load("home_screen.json"))
+        self.assertEqual(len(settings), 1)
+        tile = settings[0]
+        self.assertEqual((tile.kind, tile.label, tile.status_value), (model.DEVICE, "Atlas Air", "PC"))
+
+
 class FocusableNameTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

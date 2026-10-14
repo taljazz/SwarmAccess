@@ -32,6 +32,8 @@ SWITCH = "switch"
 SLIDER = "slider"
 COMBO = "combo box"
 STATUS = "status"
+DEVICE = "device"
+DEVICE_TILE_CLASS = "module_widget_fm_c"
 
 # The equalizer draws its band names itself, so they are not in the tree.
 # Read off the screen on 2026-10-14; there are always ten.
@@ -387,6 +389,17 @@ def build_settings(snap: Snapshot) -> list[Setting]:
                 key=key_for(element), kind=SLIDER, label=text, section=section,
                 element=element, minimum=minimum, maximum=maximum, end_names=ends,
                 vertical=element.rect.height > element.rect.width,
+            ))
+        elif cls == DEVICE_TILE_CLASS:
+            # Swarm II's home screen: one tile per headset, opened by clicking it.
+            name = snap.find("lb_device_name", within=element.automation_id)
+            model_name = snap.find("lb_version", within=element.automation_id)
+            status = snap.find("lb_device_status", within=element.automation_id)
+            text = " ".join(e.name for e in (name, model_name) if e is not None and e.name.strip())
+            text = text.replace("\u2122", "").replace("\ufffd", "").strip().title() or "Headset"
+            settings.append(Setting(
+                key=key_for(element), kind=DEVICE, label=text, section="Devices", element=element,
+                status_value=status.name.strip() if status is not None else "", value_element=status,
             ))
         elif cls in LABEL_CLASSES and element.object_name in status_titles:
             value = snap.find(status_titles[element.object_name], within=element.parent_path)
