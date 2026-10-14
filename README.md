@@ -58,7 +58,7 @@ on for its switches and sliders. That has consequences:
   Swarm II as of October 2026 with an Atlas Air. A redesign will need new
   measurements; the tools for that are in `tools/`.
 * **Values are measured, not reported.** A slider's value is worked out
-  from where its thumb is drawn. They have checked out exactly wherever
+  from where its thumb is drawn. The readings have matched exactly wherever
   there was something to check against: Audio master volume read 70 when
   Windows reported 70.0%; the equalizer matched Swarm II's own "+3.1 dB",
   "-0.1 dB" and "+0.0 dB" labels; sliders at their ends read 100 and 15 of
