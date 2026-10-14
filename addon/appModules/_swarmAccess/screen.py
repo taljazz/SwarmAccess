@@ -123,6 +123,21 @@ def is_showing(top_level: int, rect: Rect, inset: int = 2) -> bool:
     return all(window_at(x, y) == top_level for x, y in points)
 
 
+def process_of(hwnd: int) -> int:
+    pid = wintypes.DWORD()
+    user32.GetWindowThreadProcessId(wintypes.HWND(hwnd), ctypes.byref(pid))
+    return pid.value
+
+
+def belongs_to_process(top_level: int, rect: Rect) -> bool:
+    """True when the centre of ``rect`` is in a window of ``top_level``'s process.
+
+    Used for a combo box's popup list, which is a top-level window of its own.
+    """
+    owner = window_at(int(rect.center_x), int(rect.center_y))
+    return owner is not None and process_of(owner) == process_of(top_level)
+
+
 def cursor_position() -> tuple[int, int]:
     point = wintypes.POINT()
     user32.GetCursorPos(ctypes.byref(point))

@@ -25,7 +25,6 @@ import mouseHandler
 import ui
 import UIAHandler
 import winUser
-from keyboardHandler import KeyboardInputGesture
 from logHandler import log
 from NVDAObjects.UIA import UIA
 from scriptHandler import script
@@ -66,6 +65,25 @@ ROLE_FOR_KIND = {
     model.SLIDER: controlTypes.Role.SLIDER,
     model.COMBO: controlTypes.Role.COMBOBOX,
 }
+# Keys that belong to the settings list.  They are bound only while the list
+# is in charge (see AppModule._update_bindings), so inside a combo box's
+# popup or on a button every keystroke reaches Swarm II untouched.
+LIST_GESTURES = {
+    "kb:downArrow": "next",
+    "kb:upArrow": "previous",
+    "kb:control+home": "first",
+    "kb:control+end": "last",
+    "kb:pageDown": "next_section",
+    "kb:pageUp": "previous_section",
+    "kb:rightArrow": "increase",
+    "kb:leftArrow": "decrease",
+    "kb:shift+rightArrow": "increase_fine",
+    "kb:shift+leftArrow": "decrease_fine",
+    "kb:end": "maximum",
+    "kb:home": "minimum",
+}
+# Space and Enter stay with a focused button (Reset, Help, Save...).
+ACTIVATE_GESTURES = {"kb:space": "activate", "kb:enter": "activate"}
 # How long a snapshot of the page stays good enough for naming focus.
 NAME_SNAPSHOT_AGE = 2.0
 
@@ -151,15 +169,19 @@ class AppModule(appModuleHandler.AppModule):
         if not hwnd:
             return None
         root = winUser.getAncestor(hwnd, winUser.GA_ROOT)
-        return root if root and winUser.getWindowText(root) == WINDOW_TITLE else None
+        # A combo box's popup is a top-level window with the same title, but
+        # its class is Qt...QWindowPopup...; the main window's is Qt...QWindowIcon.
+        if (root and winUser.getWindowText(root) == WINDOW_TITLE
+                and winUser.getClassName(root).endswith("QWindowIcon")):
+            return root
+        return None
 
     def _ensure_page(self, hwnd: int) -> SwarmPage | None:
         main = self._main_window(hwnd)
         if main is None:
             return None
         if self._page is None or self._page.hwnd != main:
-            self._page = SwarmPage(UIAHandler.handler.clientObject,
-                                   UIAHandler.UIA.IUIAutomationRangeValuePattern, main)
+            self._page = SwarmPage(UIAHandler.handler.clientObject, UIAHandler.UIA, main)
             self._refresh()
         return self._page
 
@@ -195,14 +217,38 @@ class AppModule(appModuleHandler.AppModule):
             self._refresh()
         return bool(self._page.settings)
 
+    def _update_bindings(self, focus) -> None:
+        """Attach the list's keys when the list is in charge, detach them otherwise.
+
+        Detaching rather than re-sending keys matters: a key NVDA re-sends is
+        injected, and Swarm II's popups did not act on injected arrow keys.
+        """
+        in_list = (
+            focus is not None and focus.appModule is self
+            and focus.role not in PASS_THROUGH_ROLES
+            and self._main_window(focus.windowHandle) is not None
+        )
+        activating = in_list and focus.role not in BUTTON_ROLES
+        for table, wanted in ((LIST_GESTURES, in_list), (ACTIVATE_GESTURES, activating)):
+            for gesture, name in table.items():
+                if wanted:
+                    self.bindGesture(gesture, name)
+                else:
+                    try:
+                        self.removeGestureBinding(gesture)
+                    except LookupError:
+                        pass
+
     def event_appModule_gainFocus(self):
         # Swarm II's pages change behind our back (device unplugged, another
         # page opened), so start each visit from a fresh look at the window.
         if self._page is not None:
             self._refresh()
+        self._update_bindings(api.getFocusObject())
 
     def event_gainFocus(self, obj, nextHandler):
         nextHandler()
+        self._update_bindings(obj)
         if not self._hinted and self._main_window(obj.windowHandle):
             self._hinted = True
             ui.message(_("SwarmAccess: arrow keys move through the settings"))
@@ -260,27 +306,27 @@ class AppModule(appModuleHandler.AppModule):
         gesture.send()
         return True
 
-    @script(description=_("Next Swarm II setting"), category=CATEGORY, gesture="kb:downArrow")
+    @script(description=_("Next Swarm II setting"), category=CATEGORY)
     def script_next(self, gesture):
         if not self._pass_through(gesture):
             self._move_to(self._position + 1)
 
-    @script(description=_("Previous Swarm II setting"), category=CATEGORY, gesture="kb:upArrow")
+    @script(description=_("Previous Swarm II setting"), category=CATEGORY)
     def script_previous(self, gesture):
         if not self._pass_through(gesture):
             self._move_to(self._position - 1)
 
-    @script(description=_("First Swarm II setting"), category=CATEGORY, gesture="kb:control+home")
+    @script(description=_("First Swarm II setting"), category=CATEGORY)
     def script_first(self, gesture):
         if not self._pass_through(gesture):
             self._move_to(0)
 
-    @script(description=_("Last Swarm II setting"), category=CATEGORY, gesture="kb:control+end")
+    @script(description=_("Last Swarm II setting"), category=CATEGORY)
     def script_last(self, gesture):
         if not self._pass_through(gesture):
             self._move_to(len(self._page.settings) - 1)
 
-    @script(description=_("Next section of Swarm II settings"), category=CATEGORY, gesture="kb:pageDown")
+    @script(description=_("Next section of Swarm II settings"), category=CATEGORY)
     def script_next_section(self, gesture):
         if self._pass_through(gesture):
             return
@@ -290,7 +336,7 @@ class AppModule(appModuleHandler.AppModule):
         else:
             ui.message(_("No more sections"))
 
-    @script(description=_("Previous section of Swarm II settings"), category=CATEGORY, gesture="kb:pageUp")
+    @script(description=_("Previous section of Swarm II settings"), category=CATEGORY)
     def script_previous_section(self, gesture):
         if self._pass_through(gesture):
             return
@@ -303,7 +349,7 @@ class AppModule(appModuleHandler.AppModule):
             ui.message(_("No previous section"))
 
     @script(description=_("Toggle the current switch, or open the current combo box"),
-            category=CATEGORY, gestures=("kb:space", "kb:enter"))
+            category=CATEGORY)
     def script_activate(self, gesture):
         if self._pass_through(gesture, activating=True):
             return
@@ -312,9 +358,10 @@ class AppModule(appModuleHandler.AppModule):
             before, after = self._click(lambda: self._page.toggle(setting))
             self._report_change(setting, before, after)
         elif setting.kind == model.COMBO:
-            # The real combo box takes it from here, with its own list.
-            self._page.focus(setting)
-            KeyboardInputGesture.fromName("alt+downArrow").send()
+            # Swarm II's own list takes it from here: focus lands on the chosen
+            # option, the list keys detach, and Up, Down and Enter are Qt's.
+            if not self._page.open_list(setting):
+                ui.message(_("Could not open {label}").format(label=setting.label))
         else:
             self._announce_current(setting.section)
 
@@ -346,8 +393,16 @@ class AppModule(appModuleHandler.AppModule):
             before, after = self._click(lambda: self._page.set_slider(setting, target))
             self._report_change(setting, before, after)
         elif setting.kind == model.COMBO and not to_end:
-            self._page.focus(setting)
-            KeyboardInputGesture.fromName("downArrow" if direction > 0 else "upArrow").send()
+            before, after, names = self._click(lambda: self._page.choose_option(setting, direction))
+            if after.hidden:
+                self._report_change(setting, before, after)
+            elif after.value != before.value:
+                ui.message(str(after.value))
+            elif names:
+                edge = _("last option") if direction > 0 else _("first option")
+                ui.message(f"{after.value}, {edge}")
+            else:
+                ui.message(_("{label} did not change, still {value}").format(label=setting.label, value=after.value))
         else:
             self._announce_current(setting.section)
 
@@ -357,28 +412,28 @@ class AppModule(appModuleHandler.AppModule):
             return action()
 
     @script(description=_("Increase the current slider, turn the switch on, or pick the next option"),
-            category=CATEGORY, gesture="kb:rightArrow")
+            category=CATEGORY)
     def script_increase(self, gesture):
         self._adjust(gesture, +1)
 
     @script(description=_("Decrease the current slider, turn the switch off, or pick the previous option"),
-            category=CATEGORY, gesture="kb:leftArrow")
+            category=CATEGORY)
     def script_decrease(self, gesture):
         self._adjust(gesture, -1)
 
-    @script(description=_("Increase the current slider by one"), category=CATEGORY, gesture="kb:shift+rightArrow")
+    @script(description=_("Increase the current slider by one"), category=CATEGORY)
     def script_increase_fine(self, gesture):
         self._adjust(gesture, +1, fine=True)
 
-    @script(description=_("Decrease the current slider by one"), category=CATEGORY, gesture="kb:shift+leftArrow")
+    @script(description=_("Decrease the current slider by one"), category=CATEGORY)
     def script_decrease_fine(self, gesture):
         self._adjust(gesture, -1, fine=True)
 
-    @script(description=_("Move the current slider to its maximum"), category=CATEGORY, gesture="kb:end")
+    @script(description=_("Move the current slider to its maximum"), category=CATEGORY)
     def script_maximum(self, gesture):
         self._adjust(gesture, +1, to_end=True)
 
-    @script(description=_("Move the current slider to its minimum"), category=CATEGORY, gesture="kb:home")
+    @script(description=_("Move the current slider to its minimum"), category=CATEGORY)
     def script_minimum(self, gesture):
         self._adjust(gesture, -1, to_end=True)
 

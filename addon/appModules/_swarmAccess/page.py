@@ -28,6 +28,7 @@ CHANGE_TIMEOUT = 0.8
 CHANGE_POLL = 0.05
 SLIDER_ATTEMPTS = 5
 SMALL_DRAG = 10  # pixels
+POPUP_SETTLE = 0.35
 
 VIEWPORT_SUFFIX = "main_page_fm_c.scrollArea.qt_scrollarea_viewport"
 CONTENT_SUFFIX = VIEWPORT_SUFFIX + ".scrollAreaWidgetContents"
@@ -57,9 +58,11 @@ class Reading:
 class SwarmPage:
     """The live settings page of one Swarm II window."""
 
-    def __init__(self, client, range_value_interface, hwnd: int):
+    def __init__(self, client, interfaces, hwnd: int):
+        """``interfaces`` is comtypes' generated UIAutomationClient module."""
         self.client = client
-        self.range_value_interface = range_value_interface
+        self.interfaces = interfaces
+        self.range_value_interface = interfaces.IUIAutomationRangeValuePattern
         self.hwnd = hwnd
         self.settings: list[Setting] = []
         self._live: list = []
@@ -273,6 +276,75 @@ class SwarmPage:
                 time.sleep(CHANGE_POLL)
                 return self._read_pixels(setting, rect)
         return latest
+
+    def choose_option(self, setting: Setting, step: int) -> tuple[Reading, Reading, list[str]]:
+        """Pick the next (+1) or previous (-1) option of a combo box.
+
+        Swarm II's combo boxes open a standard Qt list, and UI Automation can
+        open it and name its items.  But neither Invoke nor Select on an item
+        commits the choice (tried 2026-10-14), so the option is clicked, once
+        the click point is confirmed to be Swarm II's own popup.
+        Returns the readings before and after, and the option names.
+        """
+        combo = self.live(setting.element)
+        before = Reading(uia.current_value(combo))
+        expander = uia.pattern(combo, uia.UIA_ExpandCollapsePatternId,
+                               self.interfaces.IUIAutomationExpandCollapsePattern)
+        if expander is None:
+            return before, before, []
+        expander.Expand()
+        try:
+            items = []
+            deadline = time.monotonic() + CHANGE_TIMEOUT
+            while not items and time.monotonic() < deadline:
+                time.sleep(CHANGE_POLL)
+                items = uia.list_items(self.client, combo)
+            names = [item.CurrentName for item in items]
+            if not items:
+                return before, before, names
+            # The popup slides open; a click while it moves can change what the
+            # combo box shows without Swarm II acting on it (seen 2026-10-14).
+            time.sleep(POPUP_SETTLE)
+            current = names.index(before.value) if before.value in names else 0
+            wanted = current + step
+            if not 0 <= wanted < len(items):
+                return before, before, names
+            target = uia.current_rect(items[wanted])
+            if target is None or not screen.belongs_to_process(self.hwnd, target):
+                return before, Reading(hidden=True), names
+            screen.click(int(target.center_x), int(target.center_y))
+        finally:
+            time.sleep(CHANGE_POLL)
+            if expander.CurrentExpandCollapseState != uia.ExpandCollapseState_Collapsed:
+                expander.Collapse()
+        deadline = time.monotonic() + CHANGE_TIMEOUT
+        after = before
+        while time.monotonic() < deadline:
+            after = Reading(uia.current_value(combo))
+            if after.value != before.value:
+                break
+            time.sleep(CHANGE_POLL)
+        return before, after, names
+
+    def open_list(self, setting: Setting) -> bool:
+        """Open a combo box's popup and give focus to its chosen option."""
+        combo = self.live(setting.element)
+        expander = uia.pattern(combo, uia.UIA_ExpandCollapsePatternId,
+                               self.interfaces.IUIAutomationExpandCollapsePattern)
+        if expander is None:
+            return False
+        combo.SetFocus()
+        expander.Expand()
+        current = uia.current_value(combo)
+        deadline = time.monotonic() + CHANGE_TIMEOUT
+        while time.monotonic() < deadline:
+            items = uia.list_items(self.client, combo)
+            if items:
+                chosen = next((i for i in items if i.CurrentName == current), items[0])
+                chosen.SetFocus()
+                return True
+            time.sleep(CHANGE_POLL)
+        return False
 
     def focus(self, setting: Setting) -> None:
         """Give keyboard focus to a real Swarm II control (the combo boxes can take it)."""

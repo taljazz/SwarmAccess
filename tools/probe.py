@@ -75,7 +75,7 @@ def snapshot():
 
 def open_page() -> page.SwarmPage:
     uia_client, UIA = client()
-    swarm = page.SwarmPage(uia_client, UIA.IUIAutomationRangeValuePattern, swarm_window())
+    swarm = page.SwarmPage(uia_client, UIA, swarm_window())
     swarm.refresh()
     return swarm
 
@@ -104,7 +104,7 @@ def find_setting(swarm, label):
 
 
 def cmd_set(args):
-    """Change a setting, then report what the screen shows: set "<label>" on|off|toggle|<number>."""
+    """Change a setting, then report what the screen shows: set "<label>" on|off|toggle|<number>|next|previous."""
     swarm = open_page()
     setting = find_setting(swarm, args[0])
     wanted = args[1].lower()
@@ -113,8 +113,11 @@ def cmd_set(args):
         before, after = swarm.set_switch(setting, on)
     elif setting.kind == model.SLIDER:
         before, after = swarm.set_slider(setting, float(wanted))
+    elif setting.kind == model.COMBO:
+        before, after, names = swarm.choose_option(setting, {"next": 1, "previous": -1}[wanted])
+        print("options:", ", ".join(names))
     else:
-        sys.exit("Only switches and sliders can be set.")
+        sys.exit("Status lines cannot be set.")
     print(f"{setting.label}: {before.describe(setting)} -> {after.describe(setting)}")
 
 

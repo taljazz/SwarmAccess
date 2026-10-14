@@ -18,7 +18,13 @@ UIA_NamePropertyId = 30005
 UIA_AutomationIdPropertyId = 30011
 UIA_ClassNamePropertyId = 30012
 UIA_ValueValuePropertyId = 30045
+UIA_ControlTypePropertyId = 30003
+UIA_ListItemControlTypeId = 50007
+UIA_InvokePatternId = 10000
 UIA_RangeValuePatternId = 10003
+UIA_ExpandCollapsePatternId = 10005
+UIA_SelectionItemPatternId = 10010
+ExpandCollapseState_Collapsed = 0
 TreeScope_Element = 1
 TreeScope_Descendants = 4
 
@@ -89,3 +95,16 @@ def range_value_pattern(element, interface):
     """The element's RangeValue pattern as ``interface`` (IUIAutomationRangeValuePattern)."""
     unknown = element.GetCurrentPattern(UIA_RangeValuePatternId)
     return unknown.QueryInterface(interface) if unknown else None
+
+
+def pattern(element, pattern_id, interface):
+    """One of the element's patterns as ``interface``, or None if it has none."""
+    unknown = element.GetCurrentPattern(pattern_id)
+    return unknown.QueryInterface(interface) if unknown else None
+
+
+def list_items(client, element) -> list:
+    """The list items under ``element``, in order."""
+    found = element.FindAll(TreeScope_Descendants,
+                            client.CreatePropertyCondition(UIA_ControlTypePropertyId, UIA_ListItemControlTypeId))
+    return [found.GetElement(i) for i in range(found.Length)]
